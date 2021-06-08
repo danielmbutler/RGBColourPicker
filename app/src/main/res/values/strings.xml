@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RGB Colour Picker</string>
+    <string name="r">R</string>
+    <string name="color_changer">RGB Colour Picker</string>
+    <string name="move_the_sliders_to_change_the_background">Move the sliders to change the background colour</string>
+    <string name="g">G</string>
+    <string name="current_color">Current Colour:</string>
+    <string name="b">B</string>
+</resources>

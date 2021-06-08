@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color_changer"
+        android:textSize="@dimen/main_title_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <SeekBar
+        android:id="@+id/main_R_seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="6dp"
+        android:progressTint="@color/black"
+        android:thumbTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_r_tv"
+        app:layout_constraintTop_toBottomOf="@+id/main_description_textview" />
+
+    <TextView
+        android:id="@+id/main_r_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r"
+        android:textSize="@dimen/main_seekTitle_size"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main_R_seekBar"
+        app:layout_constraintBottom_toBottomOf="@id/main_R_seekBar"
+        android:padding="6dp" />
+
+
+    <SeekBar
+        android:id="@+id/main_G_seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="6dp"
+        android:progressTint="@color/black"
+        android:thumbTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_G_tv"
+        app:layout_constraintTop_toBottomOf="@+id/main_r_tv" />
+
+    <TextView
+        android:id="@+id/main_G_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/g"
+        android:textSize="@dimen/main_seekTitle_size"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main_G_seekBar"
+        app:layout_constraintBottom_toBottomOf="@id/main_G_seekBar"
+        android:padding="6dp" />
+
+    <SeekBar
+        android:id="@+id/main_B_seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="6dp"
+        android:progressTint="@color/black"
+        android:thumbTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_B_tv"
+        app:layout_constraintTop_toBottomOf="@+id/main_G_seekBar" />
+
+    <TextView
+        android:id="@+id/main_B_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b"
+        android:textSize="@dimen/main_seekTitle_size"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main_B_seekBar"
+        app:layout_constraintBottom_toBottomOf="@id/main_B_seekBar"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/main_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/main_seekTitle_size"
+        android:text="@string/move_the_sliders_to_change_the_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <TextView
+        android:id="@+id/main_current_rgb_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:textSize="@dimen/main_seekTitle_size"
+        android:text="@string/current_color"
+        app:layout_constraintEnd_toEndOf="@+id/main_B_seekBar"
+        app:layout_constraintStart_toStartOf="@+id/main_B_seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/main_B_seekBar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
