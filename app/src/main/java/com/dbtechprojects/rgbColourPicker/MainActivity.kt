@@ -11,7 +11,7 @@ import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import com.dbtechprojects.rgbColorPicker.databinding.ActivityMainBinding
+import com.dbtechprojects.rgbColourPicker.databinding.ActivityMainBinding
 import com.dbtechprojects.rgbColourPicker.models.RGBModel
 
 
