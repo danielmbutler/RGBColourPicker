@@ -26,4 +26,4 @@ Whilst designing this app I identified an initial issue that when the background
 * Constraint Layout
 
 ## Installation Instructions
-The code can be downloaded from this Github repository and run on any Android emulator, I have also provided an apk file labelled "app.apk" which can be installed on any android device.
+The code can be downloaded from this Github repository and run on any Android emulator, you will simply just need to open the project in Android Studio, click "run" and the app will launch in the emulator, I have also provided an apk file labelled "app.apk" which can be installed on any android device.
