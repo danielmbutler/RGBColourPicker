@@ -20,7 +20,7 @@ private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
-    // viewmodel to hold RGB values, this will persist during changes in the android lifecycle (Rotation)
+    // viewModel to hold RGB values, this will persist during changes in the android lifecycle (Rotation)
     private val viewModel: MainViewModel by viewModels()
     private lateinit var binding: ActivityMainBinding
 
@@ -44,13 +44,13 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
 
-    //observer RGB value changes in viewModel and react accordingly
+    //observe RGB value changes in viewModel and react accordingly
     @RequiresApi(Build.VERSION_CODES.M)
     private fun initObservers() {
         viewModel.RGBvalue.observe(this, Observer {
             Log.d(TAG, "initObservers: current Color, $it")
 
-            // set values for BackGround and text
+            // set values for Background and text
             binding.mainBackground.setBackgroundColor(Color.rgb(it.R, it.G, it.B))
             binding.mainCurrentRgbValue.text = "Current values : R: ${it.R}, G: ${it.G}, B: ${it.B}"
 
