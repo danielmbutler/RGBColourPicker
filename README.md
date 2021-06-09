@@ -5,9 +5,9 @@ An App which changes the colour of its background based on the position of the 3
 ## Screenshots
 
 <p align="center">
-  <img src="https://github.com/danielmbutler/RGBColourPicker/blob/master/resources/screenshot1.png" width="250" >
-  <img src="https://github.com/danielmbutler/RGBColourPicker/blob/master/resources/screenshot2.png" width="250">
-  <img src="https://github.com/danielmbutler/RGBColourPicker/blob/master/resources/screenshot3.png" width="250">
+  <img src="https://github.com/danielmbutler/RGBColourPicker/blob/master/resources/screenshot_1.png" width="250" >
+  <img src="https://github.com/danielmbutler/RGBColourPicker/blob/master/resources/screenshot_2.png" width="250">
+  <img src="https://github.com/danielmbutler/RGBColourPicker/blob/master/resources/screenshot_3.png" width="250">
 </p>
 
 
